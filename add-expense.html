@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PED | Add Expense</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="add-expense.html">Add Expense</a></li>
+            <li><a href="list-expenses.html">List of Expenses</a></li>
+            <li><a href="summary.html">Summary</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Add your expenses here</h1>      
+        <p>Make sure you complete all fields so that expenses are added correctly.</p>
+
+        <form>
+            <div class="form-field">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" placeholder="Enter a brief description" required>
+            </div>
+            <div class="form-field">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter an amount" required>
+            </div>
+            <div class="form-field">
+                <label for="category">Category</label>
+                <select name="category" id="category" required>
+                    <option disabled selected>Select a category</option>
+                    <option value="food">Food</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="housing">Housing</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="health">Health</option>
+                    <option value="education">Education</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+</body>
+</html>
