@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/add-expense.js" defer></script>
     <title>PED | Add Expense</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <h1>Add your expenses here</h1>      
         <p>Make sure you complete all fields so that expenses are added correctly.</p>
 
-        <form>
+        <form id="form" method="post">
             <div class="form-field">
                 <label for="description">Description:</label>
                 <input type="text" id="description" name="description" placeholder="Enter a brief description" required>
@@ -43,7 +44,7 @@
             </div>
             <div class="form-field">
                 <label for="date">Date</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" required>
             </div>
 
             <button type="submit">Send</button>
