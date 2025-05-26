@@ -4,11 +4,11 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const description = document.querySelector("#description").value;
-    const amount = document.querySelector("#amount").value;
+    const amount = parseFloat(document.querySelector("#amount").value);
     const category = document.querySelector("#category").value;
     const date = document.querySelector("#date").value;
 
-    const expense = {description, amount, category, date};
+    const expense = {id:Date.now(), description, amount, category, date};
 
     let savedExpenses = JSON.parse(localStorage.getItem("expenses"));
 
