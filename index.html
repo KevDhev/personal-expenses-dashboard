@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/cd428ea943.js" crossorigin="anonymous"></script>
     <title>Personal Expenses Dashboard</title>
 </head>
 <body>
-    <main>
-        <h1>Personal Expenses Dashboard</h1>
-        <p>Welcome to your personal spending dashboard!</p>
+    <main class="idx-main">
+        <div class="title-div">
+            <h1>Personal Expenses Dashboard</h1>
+            <p>Welcome to your personal spending dashboard!</p>
+        </div>
 
-        <a href="add-expense.html" class="nav-btn">
-            <h2>Add expenses</h2>
-            <p>Form to add expenses with their respective description, amount and category.</p>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a href="list-expenses.html" class="nav-btn">
-            <h2>List of expenses</h2>
-            <p>List of expenses with the ability to filter by category and view details.</p>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-        <a href="summary.html" class="nav-btn">
-            <h2>Summary</h2>
-            <p>Summary with data embedded in a chart to view overall statistics.</p>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
+        <div class="link-list">
+            <a href="add-expense.html" class="nav-btn">
+                <div>
+                    <h2>Add expenses</h2>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+                <p>Form to add expenses with their respective description, amount and category.</p>               
+            </a>
+            <a href="list-expenses.html" class="nav-btn">
+                <div>
+                    <h2>List of expenses</h2>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+                <p>List of expenses with the ability to filter by category and view details.</p>        
+            </a>
+            <a href="summary.html" class="nav-btn">
+                <div>
+                    <h2>Summary</h2>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+                <p>Summary with data embedded in a chart to view overall statistics.</p>               
+            </a>
+        </div>
     </main>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/cd428ea943.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -79,4 +79,6 @@ for (let category in categories) {
 
         section.appendChild(ul)
     }
+
+    console.log(categories)
 }

@@ -17,6 +17,29 @@
     </nav>
     <main>
         <h1>Statistical summary</h1>
+
+        <section class="total-expenses">
+            <h2>Total expenses</h2>
+
+            <ul class="total-list">
+                <li class="list-item" data-category="Food">Food: $0</li>
+                <li class="list-item" data-category="Transportation">Transportation: $0</li>
+                <li class="list-item" data-category="Housing">Housing: $0</li>
+                <li class="list-item" data-category="Entertainment">Entertainment: $0</li>
+                <li class="list-item" data-category="Health">Health: $0</li>
+                <li class="list-item" data-category="Education">Education: $0</li>
+                <li class="list-item" data-category="Other">Other: $0</li>
+            </ul>
+        </section>
+
+        <section class="chart">
+            <h2>Graphic Summary</h2>
+            <canvas id="myChart"></canvas>
+        </section>
     </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <script src="js/summary.js"></script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+/*============================= GENERAL STYLES =============================== */
+:root{
+    --color-primary: #2ac92a;
+    --hover-color: #54c854;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+
+/*=============================== INDEX STYLES =============================== */
+.idx-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+}
+
+.title-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.title-div h1{
+    font-size: 28px;
+}
+
+.title-div p{
+    color: green;
+}
+
+.link-list{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 0.7rem;
+    padding: 0.5rem;
+}
+
+.nav-btn{
+    border: 2px solid var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.nav-btn h2{
+    font-size: 20px;
+}
+
+.nav-btn div{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.nav-btn:hover{
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+
+/*=========================== ADD-EXPENSES STYLES ============================= */
+/*=========================== LIST-EXPENSES STYLES ============================ */
+/*=============================== SUMMARY STYLES ============================== */
+.chart{
+    margin: 0 auto;
+    width: 70%;
+    height: 500px;
+}
