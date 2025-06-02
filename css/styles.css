@@ -5,9 +5,7 @@
     --hover-color: #54c854;
 }
 
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
-}
+*{ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'; }
 
 /*=============================== INDEX STYLES =============================== */
 .idx-main{
@@ -27,20 +25,19 @@
     padding: 0.5rem;
 }
 
-.title-div h1{
-    font-size: 28px;
-}
+.title-div h1{ font-size: 50px; }
 
 .title-div p{
     color: var(--subtitle);
+    font-size: 25px;
 }
 
 .link-list{
     display: flex;
     flex-direction: column;
     width: 70%;
-    gap: 0.7rem;
-    padding: 0.5rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .nav-btn{
@@ -51,9 +48,8 @@
     border-radius: 15px;
 }
 
-.nav-btn h2{
-    font-size: 20px;
-}
+.nav-btn h2{ font-size: 25px; }
+.nav-btn p{ font-size: 20px; }
 
 .nav-btn div{
     display: flex;
@@ -84,9 +80,11 @@
     margin-top: 1rem;
 }
 
+.main{ border: none; }
+
 .navbar{
     width: 20%;
-    height: 7rem;
+    height: 9rem;
     margin-left: 1rem;
 }
 
@@ -100,6 +98,7 @@
 .nav-list li{
     padding: 5px;
     text-align: center;
+    font-size: 22px;
 }
 
 .nav-list li:hover{
@@ -114,24 +113,32 @@
     align-items: center;
 }
 
+.main h1{ font-size: 50px; }
+
 .main p{
     color: var(--subtitle);
     margin-bottom: 1rem;
+    font-size: 25px;
 }
 
 .form{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    width: 25rem;
 }
+
+.form-field label{ font-size: 25px; }
 
 .form-field input,
 .form-field select{
-    width: 15rem;
-    padding: 2.5px;
+    width: 22rem;
+    padding: 5px;
     border-radius: 5px;
     outline: none;
     border: 1px solid black;
+    font-size: 25px;
 }
 
 .form-field input:focus,
@@ -140,13 +147,12 @@
 }
 
 .form button{
-    display: inline-block;
     cursor: pointer;
-    margin: 0 auto;
     margin-top: 1rem;
-    width: 7rem;
-    padding: 3px 0 3px 0;
+    width: 12rem;
+    padding: 5px 0 5px 0;
     border-radius: 15px;
+    font-size: 25px;
     background-color: var(--hover-color);
     color: white;
     font-weight: bold;
@@ -159,12 +165,123 @@
     transition: all 0.5s ease-in-out;
 }
 
-
-
 /*=========================== LIST-EXPENSES STYLES ============================ */
-/*=============================== SUMMARY STYLES ============================== */
-.chart{
+.expense-section{
+    border: 2px solid var(--color-primary);
+    width: 90%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.incurred-title{ margin-bottom: 1rem; }
+
+.expense-section h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+
+.expense-section p{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.section-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.section-list li{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 1rem;
+    background-color: rgb(48, 47, 47);
+}
+
+.section-list li p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.section-list li span{ color: var(--color-primary); }
+
+.section-list li div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     margin: 0 auto;
-    width: 70%;
+}
+
+.deleteBtn,
+.updateBtn{
+    cursor: pointer;
+    width: 7rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.deleteBtn{ background-color: red; }
+.updateBtn{ background-color: blue; }
+
+.deleteBtn:hover{
+    transition: all .4s ease-in;
+    background-color: #ff6060;
+}
+
+.updateBtn:hover{
+    transition: all .4s ease-in;
+    background-color: #5959ff;
+}
+
+/*=============================== SUMMARY STYLES ============================== */
+.total-expenses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.total-expenses h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.total-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.total-list li{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.total-span { color: var(--color-primary);}
+
+.chart{
+    margin: 1rem auto;
+    width: 80%;
     height: 500px;
+}
+
+.chart h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1rem;
 }

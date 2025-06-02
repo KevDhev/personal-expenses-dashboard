@@ -33,10 +33,12 @@ for (let category in categories) {
             const li = document.createElement("li");
 
             li.innerHTML = `
-                <p class="exp-item">${expense.description}: <span class="exp-amount">$${expense.amount}</span></p>
+                <p>${expense.description}: <span>$${expense.amount}</span></p>
 
-                <button class="deleteBtn" data-id="${expense.id}">Delete</button>
-                <button class="updateBtn" data-id="${expense.id}">Update</button>
+                <div>
+                    <button class="deleteBtn" data-id="${expense.id}">Delete</button>
+                    <button class="updateBtn" data-id="${expense.id}">Update</button>
+                </div>
             `
 
             const deleteBtn = li.querySelector(".deleteBtn");
@@ -70,7 +72,7 @@ for (let category in categories) {
                 localStorage.setItem("expenses", JSON.stringify(expenses));
 
                 li.querySelector(".exp-item").innerHTML = `
-                    ${expenseToUpdate.description}: <span class="exp-amount">$${expenseToUpdate.amount}</span>
+                    ${expenseToUpdate.description}: <span>$${expenseToUpdate.amount}</span>
                 `;
             })
            

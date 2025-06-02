@@ -20,7 +20,7 @@ listItems.forEach(li => {
     const key = originalCategory.toLowerCase();
     const total = totals[key] || 0;
 
-    li.innerHTML = `${originalCategory}: <span class="total-span">$${total.toFixed(2)}</span>`;
+    li.innerHTML = `You have spent <span class="total-span">$${total.toFixed(2)}</span> on ${originalCategory}.`;
 });
 
 //Chart with Chart.js:
